@@ -14,7 +14,7 @@ public class MyApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-        UnicornSDK.init(this, "b103e36c541d05aa60cdc9413fbb2e45").apply();
+        UnicornSDK.init(this, "your key").apply();
     }
 
 }
