@@ -12,9 +12,9 @@ import com.qiyukf.unicorn.api.ImageLoaderListener;
 import com.qiyukf.unicorn.api.UnicornImageLoader;
 
 /**
+ * 客服页面中使用的图片加载库
  * Created by vitozhang on 2018/6/5.
  */
-
 public class GlideImageLoader implements UnicornImageLoader {
     private Context context;
 

@@ -14,12 +14,12 @@ import java.util.List;
  * Created by vitozhang on 2018/6/5.
  */
 
-public class QYPackage implements ReactPackage {
+public class QiYuPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> list = new ArrayList<>();
-        list.add(new QYModule(reactContext));
+        list.add(new QiYuModule(reactContext));
         return list;
     }
 

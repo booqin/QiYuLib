@@ -8,9 +8,9 @@ import com.qiyukf.unicorn.api.UnicornImageLoader;
 import com.qiyukf.unicorn.api.YSFOptions;
 
 /**
+ * 客服SDK，build模式，options 和 imageLoader提供默认配置
  * Created by vitozhang on 2018/6/5.
  */
-
 public class UnicornSDK {
 
 
@@ -22,6 +22,14 @@ public class UnicornSDK {
 
     private UnicornImageLoader imageLoader;
 
+    /**
+     * 初始化操作，提供options和imageLoader两个可选参数
+     * imageLoader默认使用Glide
+     * 需要调用 {@link UnicornSDK#apply()} 应用配置
+     * @param context
+     * @param appKey 七鱼提供的key
+     * @return
+     */
     public static UnicornSDK init(Context context, String appKey) {
         return new UnicornSDK(context, appKey);
     }
@@ -41,6 +49,9 @@ public class UnicornSDK {
         return this;
     }
 
+    /**
+     * 应用配置
+     */
     public void apply() {
 
         if (options == null) {
